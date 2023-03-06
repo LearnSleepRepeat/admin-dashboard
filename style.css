@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 150px 1fr 1fr;
+    grid-template-columns: 200px 3fr 1fr; 
+}
+
+.sidebar {
+    background-color: skyblue;
+    grid-area: 1/1/4/2;
+}
+
+.header {
+    background-color: yellow;
+    grid-area: 1/2/2/4;
+}
+
+.content {
+    background-color: rgb(254, 209, 153);
+    grid-area: 2/2/4/3;
+}
+
+.announcements {
+    background-color: aquamarine;
+    grid-area: 2/3/3/4;
+}
+
+.trending {
+    background-color: aqua;
+    grid-area: 3/3/4/4;
+}

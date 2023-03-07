@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-@font-face {
-    font-family: "Roboto";
-src: url("fonts/Roboto-Regular.ttf");
+html {
+    font-family: "roboto", sans-serif;
 }
 
-html {
-    font-family: roboto;
+.fullpage {
+    background-color: rgb(16, 16, 16);
+    height: 100vh;
 }
 
 .container {
@@ -46,22 +48,73 @@ html {
     cursor: pointer;
 }
 
-.sidebar img {
+.sidebar li>img {
     position: relative;
-    top: 3px; 
+    top: 4px; 
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(26deg) brightness(104%) contrast(102%);
 }
 
 .sidebar li:hover {
     font-weight: bold;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(236%) hue-rotate(48deg) brightness(113%) contrast(84%);
 }
 
+
 .header {
-    background-color: yellow;
     grid-area: 1/2/2/3;
+    display: flex;
+    flex-direction: column;
+    padding: 30px; 
+    justify-content: space-around; 
+    background-color: white; 
+}
+
+.header-top, .header-bottom {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.header-top-left, .header-top-right {
+    display: flex; 
+    gap: 15px; 
+    align-items: center; 
+    font-size: 1.5rem;  
+}
+
+.header-top-left {
+    flex-grow: 1;
+    margin-right: 300px; 
+}
+
+.header-top-searchbox {
+    background-color: rgb(238, 238, 238);
+    height: 40px; 
+    min-width: 400px; 
+    border-radius: 25px;
+    flex-grow: 1;
+}
+
+.header-bottom-left, .header-bottom-right {
+    display: flex; 
+    gap: 15px; 
+    align-items: center; 
+}
+
+.button-header-bottom {
+    background-color: rgb(24, 189, 255);
+    border-radius: 25px; 
+    padding: 10px 25px 10px 25px; 
+    color: white; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.header img {
+    cursor: pointer; 
 }
 
 .content {
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(238, 238, 238);
     grid-area: 2/2/3/3;
     display: grid;
     grid-template-rows: 10px 1fr 10px 1fr;
@@ -104,6 +157,7 @@ html {
     height: 315px; /* height of left-shadow is height of project-content element + padding-top + padding(or padding-bottom if specified) */
     width: 15px;
     border-radius: 15px 0 0 15px;
+    box-shadow: 3px 3px 3px grey;
 }
 
 .card-icon1 {
@@ -138,7 +192,7 @@ html {
 } 
 
 .project-cards h3 {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .announcements {

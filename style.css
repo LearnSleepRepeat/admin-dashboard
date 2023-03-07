@@ -64,9 +64,9 @@ html {
     background-color: rgb(217, 217, 217);
     grid-area: 2/2/3/3;
     display: grid;
-    grid-template-rows: 25px 1fr 25px 1fr;
+    grid-template-rows: 10px 1fr 10px 1fr;
     grid-template-columns: 3fr 300px;
-    gap: 15px; 
+    gap: 25px; 
     padding: 15px; 
 }
 
@@ -77,7 +77,7 @@ html {
 .projects {
     grid-area: 2/1/5/2;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
     gap: 25px;
 }
 
@@ -87,7 +87,7 @@ html {
     padding-left: 35px; 
     border-radius: 20px 15px 15px 20px; 
     box-shadow: 3px 3px 3px grey;
-    height: 250px;
+    height: 275px;
     line-height: 1.4rem;
     background-color: white;
 }
@@ -95,9 +95,17 @@ html {
 .left-shadow {
     background-color: rgb(237, 179, 117);
     float: left; 
-    height: 295px; 
+    height: 320px; /* height of left-shadow is height of project-content element + padding-top + padding(or padding-bottom if specified) */
     width: 15px;
     border-radius: 15px 0 0 15px;
+}
+
+.card-icons {
+    margin-top: auto;
+}
+
+.card-icons {
+    width: 25px; 
 }
 
 /* .project-cards::before {

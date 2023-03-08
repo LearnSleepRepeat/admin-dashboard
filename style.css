@@ -111,7 +111,7 @@ html {
     cursor: pointer; 
 }
 
-.header img {
+.header img, .trending-card img {
     cursor: pointer; 
 }
 

@@ -29,7 +29,7 @@ html {
 }
 
 .sidebar h1 {
-    margin-bottom: 50px; 
+    margin-bottom: 86px; 
     color: white;
     font-size: 2.2rem; 
 }
@@ -93,7 +93,15 @@ html {
     height: 40px; 
     min-width: 400px; 
     border-radius: 25px;
+    border: none; 
     flex-grow: 1;
+    font-size: 1.4rem; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+}
+
+.header-top-searchbox:focus {
+    outline-color:rgb(24, 189, 255)
 }
 
 .header-bottom-left, .header-bottom-right {
@@ -111,6 +119,14 @@ html {
     cursor: pointer; 
 }
 
+.button-header-bottom:hover {
+    background-color: rgb(16, 103, 138)
+}
+
+.header-svg:hover {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(64%) saturate(3312%) hue-rotate(169deg) brightness(105%) contrast(101%);
+}
+
 .header img, .trending-card img {
     cursor: pointer; 
 }
@@ -123,8 +139,6 @@ html {
 
 .content-left, .content-right {
     background-color: rgb(238, 238, 238);
-    /* grid-template-rows: 10px 1fr 10px 1fr;
-    grid-template-columns: 3fr 300px; */
     gap: 25px; 
     padding: 15px; 
 }
@@ -176,6 +190,10 @@ html {
     box-shadow: 3px 3px 3px grey;
 }
 
+.project-cards:hover > .left-shadow {
+    background-color: rgb(216, 148, 99);
+  }
+
 .card-icon1 {
     grid-area: 2/3/3/4;
     width: 35px; 
@@ -211,9 +229,6 @@ html {
     margin-bottom: 15px;
 }
 
-.announcements {
-}
-
 .announcement-card, .trending-card {
     background-color: white;
     padding: 15px; 
@@ -231,13 +246,12 @@ html {
     margin-bottom: 20px; 
 }
 
-.trending {
-}
-
-.trending-card {
-}
-
 .trending-card td {
     padding: 10px; 
     vertical-align: center; 
+}
+
+.trending-card td img {
+    display: block;
+    margin: 0 auto;
 }

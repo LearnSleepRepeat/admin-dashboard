@@ -191,7 +191,7 @@ html {
     top: -23px; 
 } 
 
-.project-cards h3 {
+.project-cards h3, .announcement-card h3, .trending-card h3 {
     margin-bottom: 15px;
 }
 
@@ -199,9 +199,23 @@ html {
     grid-area: 1/2/2/3;
 }
 
+.announcement-card, .trending-card {
+    background-color: white;
+    padding: 15px; 
+    border-radius: 15px; 
+    box-shadow: 3px 3px 3px grey; 
+    line-height: 1.4rem;
+}
+
+.announcement-card hr {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
 .announcement-card {
-    background-color: aquamarine;
+    
     grid-area: 2/2/3/3;
+
 }
 
 .trending {
@@ -209,6 +223,10 @@ html {
 }
 
 .trending-card {
-    background-color: aqua;
     grid-area: 4/2/5/3;
+}
+
+.trending-card td {
+    padding: 10px; 
+    vertical-align: center; 
 }
